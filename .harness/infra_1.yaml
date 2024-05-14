@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: infra 1_1
+  identifier: infra_1
+  orgIdentifier: Harness_io
+  projectIdentifier: donotdeleteshivanand
+  environmentRef: env1
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: account.test_kubernetes
+    namespace: default1
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
