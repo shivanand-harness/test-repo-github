@@ -1,0 +1,6 @@
+service:
+  name: new service 1
+  identifier: new_service_1
+  orgIdentifier: Harness_io
+  projectIdentifier: donotdeleteshivanand
+  description: test1
