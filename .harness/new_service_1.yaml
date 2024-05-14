@@ -1,5 +1,5 @@
 service:
-  name: new service 1
+  name: new service 123
   identifier: new_service_1
   orgIdentifier: Harness_io
   projectIdentifier: donotdeleteshivanand
