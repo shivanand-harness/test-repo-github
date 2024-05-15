@@ -6,30 +6,17 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: custom stage
-        identifier: custom_stage
+        name: test1
+        identifier: test1
         description: ""
         type: Custom
         spec:
           execution:
             steps:
               - step:
-                  type: ShellScript
-                  name: ShellScript_1
-                  identifier: ShellScript_1
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
                   spec:
-                    shell: Bash
-                    executionTarget: {}
-                    source:
-                      type: Inline
-                      spec:
-                        script: echo 1
-                    environmentVariables: []
-                    outputVariables: []
-                  timeout: 10m
-          environment:
-            environmentRef: <+input>
-            deployToAll: false
-            environmentInputs: <+input>
-            infrastructureDefinitions: <+input>
+                    duration: 10s
         tags: {}
