@@ -4,3 +4,8 @@ service:
   orgIdentifier: Harness_io
   projectIdentifier: donotdeleteshivanand
   description: test jkhoi
+  serviceDefinition:
+    spec:
+      release:
+        name: release-<+INFRA_KEY_SHORT_ID>
+    type: Kubernetes
