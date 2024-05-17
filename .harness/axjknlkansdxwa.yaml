@@ -1,0 +1,30 @@
+service:
+  name: axjknlkansdxwa
+  identifier: axjknlkansdxwa
+  serviceDefinition:
+    type: Kubernetes
+    spec:
+      manifests:
+        - manifest:
+            identifier: id1
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: github_connector_shivanand
+                  gitFetchType: Branch
+                  paths:
+                    - test1
+                  branch: main
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+      variables:
+        - name: var1
+          type: String
+          description: ""
+          required: false
+          value: value1
+  gitOpsEnabled: false
+  orgIdentifier: Harness_io
+  projectIdentifier: donotdeleteshivanand
