@@ -3,3 +3,8 @@ service:
   identifier: teascawsdwa
   orgIdentifier: Harness_io
   projectIdentifier: donotdeleteshivanand
+  serviceDefinition:
+    spec:
+      release:
+        name: release-<+INFRA_KEY_SHORT_ID>
+    type: Kubernetes
