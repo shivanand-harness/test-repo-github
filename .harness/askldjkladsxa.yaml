@@ -1,0 +1,9 @@
+service:
+  name: askldjkladsxa
+  identifier: askldjkladsxa
+  serviceDefinition:
+    type: Kubernetes
+    spec: {}
+  gitOpsEnabled: false
+  orgIdentifier: Harness_io
+  projectIdentifier: donotdeleteshivanand
