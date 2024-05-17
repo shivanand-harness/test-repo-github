@@ -1,0 +1,11 @@
+service:
+  name: test1-temp1
+  identifier: test1temp1
+  description: ""
+  tags: {}
+  serviceDefinition:
+    type: Kubernetes
+    spec: {}
+  gitOpsEnabled: false
+  orgIdentifier: Harness_io
+  projectIdentifier: donotdeleteshivanand
